@@ -6,7 +6,7 @@ import { removeWatermark } from '@/lib/watermark-remover';
 import { useI18n } from '@/hooks/useI18n';
 
 const DEMO_IMAGE = '/demo/demo-1.png';
-const DEMO_ASPECT_RATIO = 1536 / 500;
+const DEMO_ASPECT_RATIO = 1024 / 1024;
 
 export default function DemoSection() {
   const { t } = useI18n();

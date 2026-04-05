@@ -148,7 +148,7 @@ export default function FileResults({ files, onDownload, onDownloadAll, onReset 
             {file.status === 'done' && (
               <div className="mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-3">
                 <a
-                  href="https://ko-fi.com/daesrock"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Buy me a coffee on Ko-fi"

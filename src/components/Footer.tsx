@@ -24,7 +24,7 @@ export default function Footer() {
             <Link href="/terms" className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors">{t('nav.terms')}</Link>
             <Link href="/contact" className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors">{t('nav.contact')}</Link>
             <a
-              href="https://github.com/Daesrock/removerMark"
+              href="https://github.com/thecoder8890/removerMark"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors flex items-center gap-1"
