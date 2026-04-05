@@ -1,6 +1,6 @@
 {
-  "name": "UnMarkLM",
-  "short_name": "UnMarkLM",
+  "name": "removerMark",
+  "short_name": "removerMark",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

@@ -19,10 +19,10 @@ export default function Header() {
         <div className="h-16 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3 text-slate-900 dark:text-white">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-white dark:bg-white dark:text-slate-950">
-              <Image src="/favicon.svg" alt="UnMarkLM logo" width={22} height={22} priority />
+              <Image src="/favicon.svg" alt="removerMark logo" width={22} height={22} priority />
             </div>
             <div>
-              <div className="font-display text-lg font-semibold leading-none">UnMarkLM</div>
+              <div className="font-display text-lg font-semibold leading-none">removerMark</div>
               <div className="hidden sm:block text-xs text-slate-500 dark:text-slate-400">
                 {t('header.tagline')}
               </div>

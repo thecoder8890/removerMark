@@ -125,7 +125,7 @@ export default function HomePage() {
     const url = URL.createObjectURL(zipBlob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'unmarklm_clean.zip';
+    a.download = 'removermark_clean.zip';
     a.click();
     URL.revokeObjectURL(url);
   }, [files, handleDownload]);

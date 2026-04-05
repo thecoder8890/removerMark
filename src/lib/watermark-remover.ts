@@ -1,5 +1,5 @@
 /**
- * UnMarkLM — Watermark Removal Engine
+ * removerMark — Watermark Removal Engine
  *
  * Detects and removes the NotebookLM watermark from images.
  * Two methods:

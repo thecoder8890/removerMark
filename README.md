@@ -1,10 +1,10 @@
-# UnMarkLM
+# removerMark
 
 **Remove NotebookLM watermarks from infographics, slide decks, and PDFs.**
 
 100% free. 100% private. Your files never leave your device.
 
-🌐 **[UnMarkLM.com](https://unmarklm.com)**
+🌐 **[removerMark.com](https://removermark.com)**
 
 ---
 
@@ -106,7 +106,7 @@ npm run build
 
 ## Disclaimer
 
-**UnMarkLM is not affiliated with, endorsed by, or associated with Google LLC or NotebookLM.**
+**removerMark is not affiliated with, endorsed by, or associated with Google LLC or NotebookLM.**
 
 Users are responsible for ensuring their use complies with applicable terms of service and laws.
 
