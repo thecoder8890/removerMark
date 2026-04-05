@@ -39,6 +39,8 @@ next-env.d.ts
 
 # Testing
 coverage/
+examples/
+test-output/
 
 # Misc
 *.pem
