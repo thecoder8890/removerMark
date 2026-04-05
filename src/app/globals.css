@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f7fafc;
+  --foreground: #0f172a;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --surface-border: rgba(148, 163, 184, 0.22);
+  --shadow-color: rgba(15, 23, 42, 0.08);
+}
+
+.dark {
+  --background: #07101d;
+  --foreground: #e2e8f0;
+  --surface: rgba(9, 18, 33, 0.78);
+  --surface-strong: rgba(7, 16, 29, 0.9);
+  --surface-border: rgba(148, 163, 184, 0.16);
+  --shadow-color: rgba(2, 6, 23, 0.42);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-space-grotesk);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  background-image:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 28%),
+    radial-gradient(circle at 82% 8%, rgba(14, 165, 233, 0.14), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.1), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(247, 250, 252, 0.96) 48%, rgba(241, 245, 249, 0.82) 100%);
+  background-attachment: fixed;
+}
+
+.dark body {
+  background-image:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.22), transparent 30%),
+    radial-gradient(circle at 82% 8%, rgba(6, 182, 212, 0.16), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(6, 13, 24, 0.96) 0%, rgba(7, 16, 29, 0.98) 46%, rgba(3, 10, 20, 1) 100%);
+}
+
+a,
+button {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-sans), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.surface-panel {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  box-shadow:
+    0 18px 48px -28px var(--shadow-color),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(18px);
+}
+
+.surface-panel-strong {
+  background: var(--surface-strong);
+  border: 1px solid var(--surface-border);
+  box-shadow:
+    0 24px 60px -30px var(--shadow-color),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+}
+
+.section-shell {
+  position: relative;
+}
+
+.section-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.08)),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.02), transparent 55%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.dark .section-shell::before {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    linear-gradient(180deg, rgba(148, 163, 184, 0.04), transparent 55%);
+}
+
+.grid-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 92%);
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.dark .grid-glow::after {
+  opacity: 0.16;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(18px);
+  opacity: 0.65;
+  animation: float-orb 12s ease-in-out infinite;
+}
+
+.hero-orb--delay {
+  animation-delay: -5s;
+}
+
+.hero-chip {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 14px 32px -28px var(--shadow-color);
+}
+
+.dark .hero-chip {
+  background: rgba(10, 18, 31, 0.72);
+  border-color: rgba(148, 163, 184, 0.16);
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.7s ease-out both;
+}
+
+.fade-in-up-delay {
+  animation: fade-in-up 0.7s ease-out 0.12s both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-orb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) scale(1.06);
+  }
+}
+
+/* Custom scrollbar — applied only to the main document, not to iframes */
+:root ::-webkit-scrollbar {
+  width: 8px;
+}
+:root ::-webkit-scrollbar-track {
+  background: transparent;
+}
+:root ::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+.dark :root ::-webkit-scrollbar-thumb,
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+/* Ko-fi floating widget: hide scrollbars without clipping the button */
+.floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi,
+#kofi-widget-overlay,
+[id^="kofi-widget-overlay"] {
+  overflow: visible !important;
+  max-width: none !important;
+}
+.floatingchat-container-wrap iframe,
+#kofi-widget-overlay iframe,
+[id^="kofi-widget-overlay"] iframe {
+  scrollbar-width: none !important;
+}
+.floatingchat-container-wrap iframe::-webkit-scrollbar,
+#kofi-widget-overlay iframe::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* RTL support */
+[dir="rtl"] {
+  text-align: right;
+}
