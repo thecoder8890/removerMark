@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="surface-panel max-w-6xl mx-auto rounded-[2rem] px-6 py-8 md:px-8 md:py-10">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-md">
-            <p className="font-display text-2xl font-semibold text-slate-950 dark:text-white">UnMarkLM</p>
+            <p className="font-display text-2xl font-semibold text-slate-950 dark:text-white">removerMark</p>
             <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
               {t('hero.subtitle')}
             </p>
@@ -24,7 +24,7 @@ export default function Footer() {
             <Link href="/terms" className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors">{t('nav.terms')}</Link>
             <Link href="/contact" className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors">{t('nav.contact')}</Link>
             <a
-              href="https://github.com/Daesrock/UnMarkLM"
+              href="https://github.com/Daesrock/removerMark"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors flex items-center gap-1"

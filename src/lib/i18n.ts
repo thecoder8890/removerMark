@@ -29,7 +29,7 @@ export function isRTL(locale: Locale): boolean {
 export function detectLocale(): Locale {
   if (typeof window === 'undefined') return 'en';
   
-  const saved = localStorage.getItem('unmarklm-locale');
+  const saved = localStorage.getItem('removermark-locale');
   if (saved && SUPPORTED_LOCALES.includes(saved as Locale)) {
     return saved as Locale;
   }
@@ -59,7 +59,7 @@ export function detectLocale(): Locale {
 
 export function saveLocale(locale: Locale): void {
   if (typeof window !== 'undefined') {
-    localStorage.setItem('unmarklm-locale', locale);
+    localStorage.setItem('removermark-locale', locale);
   }
 }
 

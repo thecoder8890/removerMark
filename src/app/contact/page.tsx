@@ -27,7 +27,7 @@ export default function ContactPage() {
     const subject = String(form.get('subject') || '').trim();
     const message = String(form.get('message') || '').trim();
 
-    const fullSubject = encodeURIComponent(subject || 'UnMarkLM Contact');
+    const fullSubject = encodeURIComponent(subject || 'removerMark Contact');
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
@@ -121,7 +121,7 @@ export default function ContactPage() {
           <a href={`mailto:${contactEmail}`} className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block mr-4">
             {contactEmail}
           </a>
-          <a href="https://github.com/Daesrock/UnMarkLM/issues" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block">
+          <a href="https://github.com/Daesrock/removerMark/issues" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block">
             GitHub Issues
           </a>
         </div>
