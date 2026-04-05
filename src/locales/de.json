@@ -104,7 +104,7 @@
   "howItWorks.methods.crop.desc": "Crop schneidet eine minimale Region aus, in der das Badge erscheint. Diese Methode ist vorhersehbar und sehr zuverlässig, wenn du konsistente Optik brauchst.",
   "howItWorks.why.title": "Warum das NotebookLM-Wasserzeichen entfernen?",
   "howItWorks.why.p1": "Saubere Exporte wirken professioneller, wenn du interne Dokumentation, Präsentationen oder Social Visuals veröffentlichst. Das Entfernen des Badges hilft außerdem, ein einheitliches Branding zu wahren.",
-  "howItWorks.why.p2": "removerMark haelt den Prozess privat und schnell, weil alles im Browser ohne Uploads passiert.",
+  "howItWorks.why.p2": "removerMark hält den Prozess privat und schnell, weil alles im Browser ohne Uploads passiert.",
   "howItWorks.schema.name": "So entfernst du ein NotebookLM-Wasserzeichen",
   "howItWorks.schema.description": "Schritt-fuer-Schritt-Anleitung zum Entfernen des NotebookLM-Wasserzeichens aus Infografiken, Foliensaetzen und PDFs mit removerMark.",
   "howItWorks.schema.step1Name": "Aus NotebookLM exportieren",

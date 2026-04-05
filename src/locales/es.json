@@ -104,7 +104,7 @@
   "howItWorks.methods.crop.desc": "Recorte elimina una región mínima donde aparece la insignia. Este método es predecible y totalmente fiable cuando quieres consistencia visual garantizada.",
   "howItWorks.why.title": "¿Por qué quitar la marca de agua de NotebookLM?",
   "howItWorks.why.p1": "Los archivos limpios se ven más profesionales al publicar documentación interna, presentaciones o piezas visuales. Quitar la insignia también ayuda a mantener una identidad visual consistente.",
-  "howItWorks.why.p2": "removerMark mantiene el proceso privado y rapido porque todo se hace en tu navegador, sin subidas.",
+  "howItWorks.why.p2": "removerMark mantiene el proceso privado y rápido porque todo se hace en tu navegador, sin subidas.",
   "howItWorks.schema.name": "Cómo quitar una marca de agua de NotebookLM",
   "howItWorks.schema.description": "Guía paso a paso para quitar la marca de agua de NotebookLM de infografías, presentaciones y PDF con removerMark.",
   "howItWorks.schema.step1Name": "Exportar desde NotebookLM",

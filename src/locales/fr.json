@@ -104,7 +104,7 @@
   "howItWorks.methods.crop.desc": "Le rognage retire une zone minimale là où le badge apparaît. Cette méthode est prévisible et très fiable si vous voulez une cohérence visuelle garantie.",
   "howItWorks.why.title": "Pourquoi supprimer le filigrane NotebookLM ?",
   "howItWorks.why.p1": "Des exports propres paraissent plus professionnels lorsque vous publiez de la documentation interne, des présentations ou des visuels sociaux. Supprimer le badge aide aussi à maintenir une image de marque cohérente.",
-  "howItWorks.why.p2": "removerMark garde le processus prive et rapide, car tout se fait dans votre navigateur, sans envoi de fichiers.",
+  "howItWorks.why.p2": "removerMark garde le processus privé et rapide, car tout se fait dans votre navigateur, sans envoi de fichiers.",
   "howItWorks.schema.name": "Comment supprimer un filigrane NotebookLM",
   "howItWorks.schema.description": "Guide étape par étape pour supprimer le filigrane NotebookLM des infographies, présentations et PDF avec removerMark.",
   "howItWorks.schema.step1Name": "Exporter depuis NotebookLM",

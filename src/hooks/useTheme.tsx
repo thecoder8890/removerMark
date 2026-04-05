@@ -22,7 +22,20 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-    const saved = localStorage.getItem('removermark-theme') as Theme | null;
+    const themeStorageKey = 'removermark-theme';
+    const legacyThemeStorageKey = 'unmarklm-theme';
+
+    let saved = localStorage.getItem(themeStorageKey) as Theme | null;
+
+    if (!saved) {
+      const legacySaved = localStorage.getItem(legacyThemeStorageKey) as Theme | null;
+      if (legacySaved && (legacySaved === 'light' || legacySaved === 'dark')) {
+        localStorage.setItem(themeStorageKey, legacySaved);
+        localStorage.removeItem(legacyThemeStorageKey);
+        saved = legacySaved;
+      }
+    }
+
     if (saved && (saved === 'light' || saved === 'dark')) {
       setThemeState(saved);
       applyTheme(saved);
