@@ -8,7 +8,7 @@ import { useI18n } from '@/hooks/useI18n';
 export default function ContactPage() {
   const { t, ready } = useI18n();
   const [sent, setSent] = useState(false);
-  const contactEmail = 'daesrock.3707@gmail.com';
+  const contactEmail = 'inglemayur8890@gmail.com';
 
   if (!ready) {
     return (
@@ -121,7 +121,7 @@ export default function ContactPage() {
           <a href={`mailto:${contactEmail}`} className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block mr-4">
             {contactEmail}
           </a>
-          <a href="https://github.com/Daesrock/removerMark/issues" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block">
+          <a href="https://github.com/thecoder8890/removerMark/issues" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-1 inline-block">
             GitHub Issues
           </a>
         </div>

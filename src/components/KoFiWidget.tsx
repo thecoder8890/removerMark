@@ -75,7 +75,7 @@ export function KoFiWidget() {
     clearExistingKoFiWidgets();
 
     const options = theme === 'dark' ? DARK_WIDGET_OPTIONS : LIGHT_WIDGET_OPTIONS;
-    window.kofiWidgetOverlay.draw('daesrock', options);
+    window.kofiWidgetOverlay.draw('mayur', options);
     setOfficialInitialized(true);
 
     // Patch iframes injected by the Ko-fi script to remove scrollbars
