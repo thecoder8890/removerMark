@@ -158,7 +158,7 @@ export function KoFiWidget() {
 
       {showFallback ? (
         <a
-          href="https://ko-fi.com/daesrock"
+          href="https://github.com/thecoder8890/removerMark"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Buy me a coffee on Ko-fi"
